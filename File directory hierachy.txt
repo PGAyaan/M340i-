@@ -1,0 +1,28 @@
+MCQ_Whizz/
+├── css/
+│   ├── home.css
+│   ├── subject.css
+│   ├── mcq.css
+│   ├── login.css
+│   └── signup.css   
+├── images/
+│   └── mcq_whizz_logo.png
+├── js/
+│   ├── home.js
+│   ├── subject.js
+│   ├── mcq.js
+│   ├── login.js
+│   └── signup.js   
+├── php/
+│   ├── home.php
+│   ├── subject.php
+│   ├── mcq.php
+│   ├── login.php
+│   └── signup.php
+├── templates/
+│   ├── home.html
+│   ├── subject.html
+│   ├── mcq.html
+│   ├── login.html
+│   └── signup.html
+└──_________________________
