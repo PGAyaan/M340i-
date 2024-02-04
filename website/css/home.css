@@ -1,0 +1,82 @@
+/* Add your CSS styles for the Home page here */
+/* Feel free to customize based on your theme */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #800000, #FF0000, #FFA500, #BDB76B, #66CDAA, #00FFFF, #FF69B4);
+    background-size: 200% 100%;
+    animation: gradientAnimation 8s infinite alternate;
+    transition: background-position 5s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 50px; /* Adjust the size as needed */
+}
+
+.button-container {
+    display: flex;
+}
+
+.header-button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subject-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.subject {
+    text-align: center;
+}
+
+.subject p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.subject img {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px;
+    margin-bottom: 10px;
+}
