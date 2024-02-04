@@ -1,0 +1,80 @@
+/* Add your CSS styles for the Signup page here */
+/* Feel free to customize based on your theme */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #800000, #FF0000, #FFA500, #BDB76B, #66CDAA, #00FFFF, #FF69B4	                                );
+    background-size: 200% 100%;
+    animation: gradientAnimation 8s infinite alternate;
+    transition: background-position 5s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #af4c7f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+
+    /* Glow animation */
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 180), 0 0 20px rgba(255, 0, 180);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.8), 0 0 20px rgba(76, 175, 80, 0.6),
+                    0 0 40px rgba(76, 175, 80, 0.4), 0 0 60px rgba(76, 175, 80, 0.2);
+    }
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+
+.login-link a {
+    color: #4CAF50;
+}
