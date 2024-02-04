@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <script defer src="js/login.js"></script>
+    <link rel="stylesheet" href="/css/login.css"> <!-- Adjusted the path -->
+    <script defer src="/js/login.js"></script> <!-- Adjusted the path -->
     <title>MCQ Whizz - Login</title>
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <img src= "C:\Users\ASUS\Downloads\Beta_logo.png" alt="MCQ Whizz Logo" id="logo">
+            <img src="website\images\Beta_logo.png" alt="MCQ Whizz Logo" id="logo"> <!-- Updated image path -->
         </div>
         <div class="button-container">
             <button class="header-button" onclick="animateButton(this)">Login</button>
@@ -29,9 +29,10 @@
                 <input type="password" id="password" placeholder="Password">
             </div>
             <button onclick="login()">Login</button>
-            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            <p class="signup-link">Don't have an account? <a href="website/templates/signup.html">Sign Up</a></p> <!-- Updated signup.html path -->
         </div>
     </section>
+    <script src="website/js/login.js"></script> <!-- Updated JS path -->
 </body>
 
 </html>
