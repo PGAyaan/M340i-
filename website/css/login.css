@@ -2,10 +2,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    background: linear-gradient(to right, #800000, #FF0000, #FFA500, #BDB76B, #66CDAA, #00FFFF, #FF69B4);
     background-size: 200% 100%;
-    animation: gradientAnimation 10s infinite alternate;
-    transition: background-position 1s ease;
+    animation: gradientAnimation 8s infinite alternate;
+    transition: background-position 5s ease;
 }
 
 @keyframes gradientAnimation {

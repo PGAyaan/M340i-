@@ -13,3 +13,7 @@ function animateButton(button) {
         button.style.transform = 'scale(1)';
     }, 300);
 }
+
+function redirectToLogin() {
+    // Placeholder for redirection logic
+    console.log('Redirecting') }
