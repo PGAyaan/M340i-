@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script defer src="js/login.js"></script>
+    <title>MCQ Whizz - Economics</title>
+    <style>
+        /* Add your custom CSS styles here */
+        .chapter-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .chapter-list-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="website\images\Beta_logo.png" alt="MCQ Whizz Logo" id="logo">
+        </div>
+        <div class="button-container">
+            <button class="header-button" onclick="animateButton(this)">Leaderboard</button>
+            <button class="header-button" onclick="animateButton(this)">Progess</button>
+        </div>
+    </header>
+    <section class="chapter-container">
+        <h2>Chapters</h2>
+        <ul class="chapter-list">
+            <li class="chapter-list-item">Unit 1: Basic economic ideas and resources
+                <ul>
+                    <li><button onclick="loadQuestions(1)">Ch1 - Scarcity, choice and opportunity cost</button></li>
+                    <li><button onclick="loadQuestions(2)">Ch2 - Economic methodology</button></li>
+                    <li><button onclick="loadQuestions(3)">Ch3 - Factors of production</button></li>
+                    <li><button onclick="loadQuestions(4)">Ch4 - Resource allocation in different economic systems</button></li>
+                    <li><button onclick="loadQuestions(5)">Ch5 - Production possibility curves</button></li>
+                    <li><button onclick="loadQuestions(6)">Ch6 - Classification of goods and services</button></li>
+                </ul>
+            </li>
+            <li class="chapter-list-item">Unit 2: The price system and microeconomy
+                <ul>
+                    <li><button onclick="loadQuestions(7)">Ch7 - Demand and supply curves</button></li>
+                    <li><button onclick="loadQuestions(8)">Ch8 - Price elasticity, income elasticity and cross elasticity of demand</button></li>
+                    <li><button onclick="loadQuestions(9)">Ch9 - Price elasticity of supply</button></li>
+                    <li><button onclick="loadQuestions(10)">Ch10 - The interaction of demand and supply</button></li>
+                    <li><button onclick="loadQuestions(11)">Ch11 - Consumer and producer surplus</button></li>
+                </ul>
+            </li>
+            <li class="chapter-list-item">Unit 3: Government microeconomic intervention
+                <ul>
+                    <li><button onclick="loadQuestions(12)">Ch12 - Reasons for government intervention in markets</button></li>
+                    <li><button onclick="loadQuestions(13)">Ch13 - Methods and effects of government intervention in markets</button></li>
+                    <li><button onclick="loadQuestions(14)">Ch14 - Addressing income and wealth inequality</button></li>
+                </ul>
+            </li>
+            <li class="chapter-list-item">Unit 4: The macroeconomy
+                <ul>
+                    <li><button onclick="loadQuestions(15)">Ch15 - National Income statistics</button></li>
+                    <li><button onclick="loadQuestions(16)">Ch16 - Introduction to circular flow of income</button></li>
+                    <li><button onclick="loadQuestions(17)">Ch17 - Aggregate demand and aggregate supply analysis</button></li>
+                    <li><button onclick="loadQuestions(18)">Ch18 - Economic growth</button></li>
+                    <li><button onclick="loadQuestions(19)">Ch19 - Unemployment</button></li>
+                    <li><button onclick="loadQuestions(20)">Ch20 - Price stability</button></li>
+                </ul>
+            </li>
+            <li class="chapter-list-item">Unit 5: Government macroeconomic intervention
+                <ul>
+                    <li><button onclick="loadQuestions(21)">Ch21 - Government macroeconomic policy objectives</button></li>
+                    <li><button onclick="loadQuestions(22)">Ch22 - Fiscal policy</button></li>
+                    <li><button onclick="loadQuestions(23)">Ch23 - Monetary policy</button></li>
+                    <li><button onclick="loadQuestions(24)">Ch24 - Supply-side policy</button></li>
+                </ul>
+            </li>
+            <li class="chapter-list-item">Unit 6: International economic issues
+                <ul>
+                    <li><button onclick="loadQuestions(25)">Ch25 - The reasons for international trade</button></li>
+                    <li><button onclick="loadQuestions(26)">Ch26 - Protectionism</button></li>
+                    <li><button onclick="loadQuestions(27)">Ch27 - Current account of the balance of payments</button></li>
+                    <li><button onclick="loadQuestions(28)">Ch28 - Exchange rates</button></li>
+                    <li><button onclick="loadQuestions(29)">Ch29 - Policies to correct imbalances in the current account of the balance of payments</button></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <script src="website/js/login.js"></script>
+</body>
+
+</html>
