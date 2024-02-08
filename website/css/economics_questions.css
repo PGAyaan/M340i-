@@ -1,11 +1,23 @@
-/* Add your CSS styles for the Economics Questions page here */
+/* Add your CSS styles for the Home page here */
 /* Feel free to customize based on your theme */
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background: linear-gradient(to right, #800000, #FF0000, #FFA500, #BDB76B, #66CDAA, #00FFFF, #FF69B4);
+    background-size: 200% 100%;
+    animation: gradientAnimation 8s infinite alternate;
+    transition: background-position 5s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 header {
@@ -22,6 +34,8 @@ header {
 
 .button-container {
     display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 10px; /* Spacing between buttons */
 }
 
 .header-button {
@@ -29,30 +43,48 @@ header {
     color: #4CAF50;
     border: none;
     padding: 10px 15px;
-    margin-left: 10px;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-.chapter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+.header-button:hover {
+    background-color: #4CAF50;
+    color: #fff;
 }
 
-.chapter-button {
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px; /* Larger font size */
+    color: #4CAF50; /* Green color for headings */
+    margin-bottom: 20px; /* Spacing between headings and buttons */
+}
+
+.chapter-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center unit headings */
+}
+
+.chapter-list-item {
+    margin-bottom: 20px; /* Spacing between units */
+}
+
+.chapter-list-item button {
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    padding: 15px 20px;
-    margin: 10px;
+    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 16px; /* Larger font size for buttons */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-.chapter-button:hover {
-    background-color: #45a049;
+.chapter-list-item button:hover {
+    background-color: #fff;
+    color: #4CAF50;
 }

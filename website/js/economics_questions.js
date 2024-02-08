@@ -1,14 +1,15 @@
-// Add this content to economics_questions.js
-function loadChapter(chapterNumber) {
-    // Update the selected chapter text
-    document.getElementById('selected-chapter').innerText = `Chapter ${chapterNumber}`;
-
-    // You can add logic here to dynamically load questions for the selected chapter
-    // For simplicity, let's just display a placeholder message
-    document.getElementById('questions-container').innerHTML = `<p>No questions available for Chapter ${chapterNumber}.</p>`;
+// Function to handle button click events
+function handleClick(unit, chapter) {
+    console.log(`Clicked on Unit ${unit}, Chapter ${chapter}`);
+    // You can add logic here to perform actions based on the clicked unit and chapter
 }
 
-function animateButton(button) {
-    // Add animation logic if needed
-    console.log(`Button ${button.innerText} clicked!`);
-}
+// Attach click event listeners to each button
+document.querySelectorAll('.chapter-button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Extract unit and chapter numbers from button id
+        const [unit, chapter] = button.id.split('-');
+        // Call handleClick function with unit and chapter numbers
+        handleClick(unit, chapter);
+    });
+});
